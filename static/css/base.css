@@ -1,0 +1,46 @@
+/*
+Create Date: 2015-12-2
+Author     : kagol
+Description: Base style
+*/
+
+h1{font-size:138.5%}
+h2{font-size:123.1%}
+h3{font-size:108%}
+h1,h2,h3{margin:1em 0}
+h1,h2,h3,h4,h5,h6,strong{font-weight:bold}
+abbr,acronym{border-bottom:1px dotted #000;cursor:help}
+em{font-style:italic}
+blockquote,ul,ol,dl{margin:1em}
+ol,ul,dl{margin-left:2em}
+ol{list-style:decimal outside}
+ul{list-style:disc outside;}
+dd{margin-left:1em}
+th{font-weight:bold;text-align:center}
+caption{margin-bottom:.5em;text-align:center}
+p,fieldset,table,pre{margin-bottom:1em}
+input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+html,body{margin: 0;padding: 0;height: 100%;}
+body{width: 100%;background: #edf2f9;font-size: 17px;
+	font-family: "Calibri","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #60666e;}
+ul,li{list-style: none;}
+.left{float: left;}
+.right{float: right;}
+.bold{font-weight: bold;}
+.light{font-weight: lighter;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+.clear{clear: both;}
+.black{color: #000;}
+.white{color: #fff;}
+.green{color: #22c622;}
+.green_bg{background-color: #22c622;}
+.red{color: red}
+.red:hover{color: red;}
+.gray_bg{background: #F4F4F4;}
+.center{text-align: center;}
+.hidden{display: none;}
+.show{display: block;}
+.v_hidden{visibility: hidden;}
+.relative{position: relative;}
