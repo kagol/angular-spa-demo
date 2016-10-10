@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+<head>
+	<meta charset="utf-8">
+	<title>Angular SPA Demo</title>
+	<link rel="stylesheet" href="../static/css/base.css">
+	<link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+	<header class="header" ng-controller="LogoutCtrl">
+		<div class="left">Logo</div>
+		<div class="right">Hi,kagol</div>
+	</header>
+	<section class="content" ng-controller="demoListCtrl">
+		<aside class="wrap_nav">
+			<ul class="nav">
+				<li>
+					<div class="title relative"><i class="icon_fl"></i><span class="span_fl">Demo List</span></div>
+					<ul>
+						<li><a href="#/demo/list/unassign">Uncompleted</a></li>
+						<li><a href="#/demo/completed/processed">Completed</a></li>
+						<li><a href="#/demo/followup">Follow Up</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="title relative"><i class="icon_set"></i><span class="span_set">Setting</span></div>
+					<ul>
+						<li><a href="#/account">Account Info</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<section class="main" ng-style="mainStyle">
+			
+			<!-- Uncompleted - To be Assigned -->
+			<script type="text/ng-template" id="list_unassign.html">
+				<div>To be Assigned</div>
+			</script>
+
+			<script type="text/ng-template" id="followup.html">
+				<div>Follow Up</div>
+			</script>
+
+			<!-- 收藏 -->
+
+
+			<script type="text/ng-template" id="completed_processed.html">
+				<div>Completed</div>
+			</script>
+
+			<!-- Completed demo List -->
+
+
+			<script type="text/ng-template" id="account.html">
+				<div>Account</div>
+			</script>
+
+			<!-- 帐号管理（修改密码） -->
+
+
+			<div class="inner_content" ng-view></div>
+		</section>
+	</section>
+	<footer class="footer">
+		<div class="copyright">Copyright © 1998-2016 Tencent. All Rights Reserved</div>
+	</footer>
+	<script src="../static/js/angular-1.4.8.min.js"></script>
+	<script src="../static/js/angular-route.min.js"></script>
+	<script src="../static/js/demo/demo_list/demoControllers.js"></script>
+	<script src="../static/js/demo/demo_list/app.js"></script>
+</body>
+</html>
